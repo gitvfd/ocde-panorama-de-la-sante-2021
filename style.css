@@ -1,0 +1,425 @@
+/** To update for each project - color section header **/
+#HealthStatus {
+  color: #963c2d;
+}
+#RiskFactors {
+  color: #8b73b3;
+}
+#AccessCare {
+  color: #f58221;
+}
+#QualityCare {
+  color: #9c4174;
+}
+#CareResources {
+  color: #5ea9de;
+}
+/** end of setion to update **/
+#covidPhase {
+  color: #037bc1;
+}
+body {
+  background: #ffffff; /*#dde9ef;*/
+  margin-right: 5%;
+  margin-left: 5%;
+}
+img {
+  vertical-align: middle;
+}
+
+#footer {
+  float: left;
+  width: 80%;
+  font-family: "Noto Sans", sans-serif; /* font-family: Arial, Helvetica, sans-serif; */
+  color: #575757;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.legend {
+  clear: both;
+  display: block;
+  fill: #575757;
+  font-family: "Noto Sans", sans-serif; /* font-family: Arial, Helvetica, sans-serif; */
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.topicExplanation {
+  font-family: "Noto Sans", sans-serif; /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 14px;
+  font-weight: 100;
+  font-style: italic;
+  color: #7a7a7a;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.selector {
+  clear: both;
+  float: left;
+  display: block;
+  position: relative;
+  font-family: "Noto Sans", sans-serif; /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 14px;
+  font-weight: bold;
+  color: #7a7a7a;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.title {
+  font-family: "Noto Sans", sans-serif; /* font: Arial, Helvetica, sans-serif; */
+  font-size: 20px;
+  color: #575757;
+
+  margin-top: 2px;
+  margin-bottom: 1px;
+}
+
+.Explanation {
+  clear: both;
+  display: block;
+  position: relative;
+  font-family: "Noto Sans", sans-serif; /* font: Arial, Helvetica, sans-serif; */
+  font-size: 18px;
+  font-style: italic;
+  color: #575757;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.compareChart {
+  clear: both;
+  float: left;
+  display: block;
+  position: relative;
+  font-family: "Noto Sans", sans-serif; /* font: Arial, Helvetica, sans-serif; */
+  font-size: 18px;
+  color: #0297c9;
+  max-width: 90%;
+}
+
+.metadata {
+  display: block;
+  float: left;
+  font-family: "Noto Sans", sans-serif; /* font: Arial, Helvetica, sans-serif; */
+  font-size: 16px;
+  color: #575757;
+}
+.sub {
+  clear: both;
+  display: block;
+  font-family: "Noto Sans", sans-serif; /* font: Arial, Helvetica, sans-serif; */
+  font-style: normal;
+  font-size: 12px;
+  color: #575757;
+}
+
+span {
+  display: block;
+}
+
+.sector {
+  clear: both;
+  float: left;
+  display: block;
+  position: relative;
+  font-family: "Noto Sans", sans-serif; /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 1.75vw;
+  /**color:#8EA4B1;**/
+  margin-top: 3px;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#source {
+  clear: both;
+  float: left;
+  display: block;
+  position: relative;
+  font-family: "Noto Sans", sans-serif; /* font: Arial, Helvetica, sans-serif; */
+  font-style: normal;
+  font-size: 12px;
+  color: #575757;
+  margin-top: 10px;
+}
+
+[tooltip]:before {
+  /* needed - do not touch */
+  content: attr(tooltip);
+  position: absolute;
+  opacity: 0;
+
+  /* customizable */
+  transition: all 0.15s ease;
+  padding: 10px;
+  color: #575757;
+  font-family: "Noto Sans", sans-serif; /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 12px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px silver;
+}
+
+[tooltip]:hover:before {
+  /* needed - do not touch */
+  opacity: 1;
+
+  /* customizable */
+  background: rgb(252, 252, 252);
+  margin-top: -20px;
+  margin-left: 20px;
+}
+
+[tooltip]:not([tooltip-persistent]):before {
+  pointer-events: none;
+}
+/* --- Tooltip --- */
+#countryTooltipSetUP {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: rgb(252, 252, 252);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+#countryTooltipSetUP.hidden {
+  display: none;
+}
+
+#countryTooltipSetUP p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+#countryTooltip {
+  font-family: "Noto Sans", sans-serif; /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 16px;
+}
+
+#indicTooltip {
+  margin-top: 5px;
+  font-family: "Noto Sans", sans-serif; /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 12px;
+}
+
+#valueTooltip {
+  margin-top: 5px;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 13px;
+}
+
+#evoTooltip {
+  font-size: 12px;
+}
+
+#imageTooltip {
+  width: 15px;
+  height: 15px;
+}
+
+.label {
+  font-family: "Noto Sans", sans-serif; /* font-family: Arial, Helvetica, sans-serif; */
+  color: #575757;
+  font-size: 10px;
+}
+
+.datalabel {
+  font-family: "Noto Sans", sans-serif; /* font-family: Arial, Helvetica, sans-serif; */
+  color: #575757;
+  font-size: 9px;
+  font-style: italic;
+}
+
+.siteFooterBar {
+  clear: both;
+  display: inline-block;
+  position: relative;
+  color: #cacaca;
+}
+
+.siteFooterBar img {
+  clear: both;
+  display: inline-block;
+  position: relative;
+  width: 50px;
+}
+
+#toolbar {
+  display: inline-block;
+}
+.button {
+  min-width: 130px;
+  padding: 4px 5px;
+  cursor: pointer;
+  text-align: center;
+  font: 14px Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  float: left;
+  margin: 2px 5px 2px 5px;
+  color: #464646;
+  background: #f8fafc;
+  border: 1px solid #e0e0e0;
+}
+.button:hover {
+  background: #fff;
+}
+
+.button.active {
+  background: #8ea4b1;
+  color: #fff;
+}
+
+.btn_share {
+  clear: both;
+  float: left;
+  display: block;
+  position: relative;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
+  border: 1px solid #688c28;
+  background-color: #76a02d;
+  background-image: linear-gradient(to bottom, #93c739, #76a02d);
+}
+
+.btn_share:hover {
+  opacity: 0.8;
+}
+
+#shareContainer {
+  visibility: hidden;
+}
+.resourceContent {
+  background-color: #e9f2f6;
+  padding-right: 5%;
+  padding-left: 3%;
+  padding-top: 30px;
+  height: auto;
+  overflow: auto;
+}
+.resourceContainer {
+  position: fixed;
+  bottom: 40px;
+  top: 90px;
+  height: auto;
+  width: 80%;
+  background-color: #e9f2f6;
+  z-index: 15;
+  color: black;
+}
+
+.generalText {
+  margin-top: 20px;
+}
+.aboutItem,
+.aboutItem h3 {
+  font-size: 12px;
+}
+
+.shareList {
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+}
+.shareItem {
+  float: left;
+  width: 38%;
+  margin: 1%;
+  padding: 5%;
+  height: 80px;
+  background: #dde9ef;
+  color: #000000;
+  text-align: center;
+}
+.shareItem:hover {
+  color: #ffffff;
+}
+.storybutton,
+.sharebutton,
+.sortbutton {
+  background-color: #313131;
+  color: white;
+  cursor: pointer;
+}
+
+.button,
+.sharebutton,
+.storybutton,
+.sortbutton {
+  -moz-box-shadow: inset 0px 0px 0px 0px #bbdaf7;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #bbdaf7;
+  box-shadow: inset 0px 0px 0px 0px #bbdaf7;
+  border: 0px;
+  font-size: 12px;
+}
+
+.storybutton,
+.sharebutton {
+  padding: 3px 10px;
+}
+.button,
+.sharebutton,
+.sortbutton,
+.roundBorders {
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -webkit-border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+@media only screen and (min-width: 700px) {
+  .closeButtonAbout {
+    position: absolute;
+    right: 5%;
+    top: 10px;
+  }
+  .aboutItem,
+  .aboutItem h3 {
+    font-size: 14px;
+  }
+  .generalText {
+    margin-top: 18px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .closeButtonAbout {
+    position: absolute;
+    right: 5%;
+    top: 10px;
+  }
+  .aboutItem,
+  .aboutItem h3 {
+    font-size: 16px;
+  }
+  .generalText {
+    margin-top: 25px;
+  }
+
+  .resourceContent {
+    margin-top: 50px;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
