@@ -166,14 +166,14 @@ legend.append("text")
 .attr("y",height/2.5)
 .attr("class","legend")
 .attr("text-anchor","middle")
-.text("Highest")
+.text("Plus haut")
 
 legend.append("text")
 .attr("x",marginLeft)
 .attr("y",height/2.5)
 .attr("class","legend")
 .attr("text-anchor","middle")
-.text("Lowest");
+.text("Plus bas");
 
 function createComparison(topicSelected,countrySel){
 test="#"+topicSelected;
@@ -341,7 +341,7 @@ console.log(minValue)
 	            //if(d.value!=minValue && d.value!=maxValue ){
 
 		            if (topicSelected=="healthexp" )
-		              return  d.Country+ " (" + format(d.value) + " usd"+")";
+		              return  d.Country+ " (" + format(d.value) + " USD PPA"+")";
 		            else if((topicSelected=="doccap" ||  topicSelected=="nursecap" ||  topicSelected=="healthexpShare"  ) )
 						return d.Country+ " (" + format(d.value) + " Pour 1 000"+")";
 		            else
@@ -372,13 +372,13 @@ console.log(minValue)
 		     d3.select("#indicTooltip")
 		        .text(function(){
 	            	if (topicSelected=="healthexp")
-	            		return "Health spending";
+	            		return "Dépenses de santé";
 	            	if (topicSelected=="doccap")
-	            		return "Doctors";
+	            		return "Médecins";
 	            	if (topicSelected=="nursecap")
-	            		return "Nurses";
+	            		return "Personnel infirmier";
 	            	if (topicSelected=="healthexpShare")
-	            		return "Hospital beds";
+	            		return "Lits d’hôpital";
 	            });
 
 		     d3.select("#valueTooltip")

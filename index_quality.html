@@ -89,7 +89,7 @@
 		<span id="PrimCare"></span>
 	</div>
 	<div class="compareChart" >
-		<div class="metadata" tooltip="Taux de mortalité à 30 jours suite à un IAM (pour 100 admissions, standardisés en fonction de l’âge et du sexe, IAM = infarctus aigu du myocarde) – 2019">Efficacité des soins secondaire
+		<div class="metadata" tooltip="Taux de mortalité à 30 jours suite à un IAM (pour 100 admissions, standardisés en fonction de l’âge et du sexe, IAM = infarctus aigu du myocarde) – 2019">Efficacité des soins secondaires
 		</div>
 		<span id="SecCare"></span>
 	</div>
@@ -344,8 +344,11 @@ test="#"+topicSelected;
 		       
 		            if (topicSelected=="safePresc" )
 		              return  d.Country+ " (" + format(d.value) + " pour 1 000"+")";
-		            else if((topicSelected=="PrimCare" || topicSelected == "SecCare") )
-						return d.Country+ " (" + format(d.value) + " pour 100"+")";
+		            else if((topicSelected=="PrimCare" ) )
+						return d.Country+ " (" + format(d.value) + " pour 100 000"+")";
+
+		            else if((topicSelected == "SecCare") )
+						return d.Country+ " (" + format(d.value) + " pour 100 admissions"+")";
 		            else if((topicSelected=="CancerCare" ))
 						return d.Country+ " (" + format(d.value) + " %"+")";
 		            else
@@ -376,13 +379,13 @@ test="#"+topicSelected;
 		     d3.select("#indicTooltip")
 		        .text(function(){
 	            	if (topicSelected=="safePresc")
-	            		return "Safe primary care";
+	            		return "Sécurité des soins primaires";
 	            	if (topicSelected=="PrimCare")
-	            		return "Effective primary care";
+	            		return "Efficacité des soins primaires";
 	            	if (topicSelected=="SecCare")
-	            		return "Effective secondary care ";
+	            		return "Efficacité des soins secondaires ";
 	            	if (topicSelected=="CancerCare")
-	            		return "Effective preventing care";
+	            		return "Efficacité des soins préventifs";
 	            });
 
 		     d3.select("#valueTooltip")

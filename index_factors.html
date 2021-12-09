@@ -343,7 +343,7 @@ test="#"+topicSelected;
 		            if (topicSelected=="smoking"  ||  topicSelected=="obesity")
 		              return  d.Country+ " (" + format(d.value) + " %"+")";
 		            else if((topicSelected=="alcohol" ) )
-						return d.Country+ " (" + format(d.value) + " litre"+")";
+						return d.Country+ " (" + format(d.value) + " litres"+")";
 		            else if((topicSelected=="airpol" ))
 						return d.Country+ " (" + format(d.value) + " pour 100 000"+")";
 		            else
@@ -374,13 +374,13 @@ test="#"+topicSelected;
 		     d3.select("#indicTooltip")
 		        .text(function(){
 	            	if (topicSelected=="smoking")
-	            		return "Smoking";
+	            		return "Tabagisme";
 	            	if (topicSelected=="alcohol")
-	            		return "Alcohol";
+	            		return "Alcool";
 	            	if (topicSelected=="obesity")
-	            		return "Overweight/Obese";
+	            		return "Surpoids / obésité";
 	            	if (topicSelected=="airpol")
-	            		return " Ambient air pollution ";
+	            		return "Pollution atmosphérique";
 	            });
 
 		     d3.select("#valueTooltip")

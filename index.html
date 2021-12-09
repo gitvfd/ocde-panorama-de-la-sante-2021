@@ -93,7 +93,7 @@
 		<span id="ChronicDisMor"></span>
 	</div>
 	<div class="compareChart" >
-		<div class="metadata" tooltip="Population en mauvaise santé (% de la population âgée de 15 ans et +) – 2019">État de santé perç
+		<div class="metadata" tooltip="Population en mauvaise santé (% de la population âgée de 15 ans et +) – 2019">État de santé perçu
 		</div>
 		<span id="SelfRated"></span>
 	</div>
@@ -374,13 +374,13 @@ function createComparison(topicSelected,countrySel){
 		     d3.select("#indicTooltip")
 		        .text(function(){
 	            	if (topicSelected=="LifeExp")
-	            		return "Life expectancy";
+	            		return "Espérance de vie";
 	            	if (topicSelected=="AvMort")
-	            		return "Avoidable morbidity";
+	            		return "Mortalité évitable";
 	            	if (topicSelected=="ChronicDisMor")
-	            		return "Chronic disease morbidity";
+	            		return "Morbidité des maladies chroniques";
 	            	if (topicSelected=="SelfRated")
-	            		return "Self-rated Health";
+	            		return "État de santé perçu";
 	            });
 
 		     d3.select("#valueTooltip")
